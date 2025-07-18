@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.header {
+  background: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  color: yellow;
+  font-weight: bold;
+}
+
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #111, #000);
+}
+
+
+.hero-text {
+  max-width: 50%;
+}
+
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: yellow;
+  text-shadow: 0 0 5px yellow;
+}
+
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+}
+
+
+.btn {
+  background: yellow;
+  color: #000;
+  border: none;
+  padding: 0.8rem 2.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #ffeb3b;
+}
+
+
+.hero-img img {
+  width: 350px;
+  height: auto;
+}
+
+
+.about,
+.features,
+.choose-role {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+
+.about h2,
+.features h2,
+.choose-role h2 {
+  color: yellow;
+  text-shadow: 0 0 5px yellow;
+}
+
+
+.feature-cards,
+.role-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+
+.card,
+.role-card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+
+.card:hover,
+.role-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.2);
+}
+
+
+.card h3,
+.role-card h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+
+.card p,
+.role-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+
+.footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.start-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+
+.wallet-confirmation {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #00ff95;
+  background-color: #111;
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.wallet-id {
+  font-family: monospace;
+  color: #0af;
+}
+
+
+/* Progress Bar - retained in case needed later */
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  background: #444;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00ff95, #009dff);
+  transition: width 0.3s ease;
+}
+
+
+/* Boxed Section Styling */
+.boxed-section {
+  padding: 2rem 1rem;
+}
+
+
+.box {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  color: #eee;
+}
+
+
+/* Role Selection Styling */
+.choose-role h2 {
+  color: yellow;
+  margin-bottom: 0.5rem;
+}
+
+
+.choose-role p {
+  color: #ccc;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+
+.role-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #333;
+}
+
+
+.choose-role {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+
+.choose-role h2 {
+  font-size: 2rem;
+  color: yellow;
+  text-shadow: 0 0 6px #fff200;
+  margin-bottom: 0.5rem;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px yellow;
+  }
+  to {
+    text-shadow: 0 0 20px #ff0;
+  }
+}
+
+
+.role-image {
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 150px;
+  height: auto;
+  border: 3px solid yellow;
+  border-radius: 12px;
+  padding: 5px;
+  background-color: #111;
+}
+
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
